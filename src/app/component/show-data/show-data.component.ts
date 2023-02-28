@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {PokeDataService} from "../../service/poke-data.service";
 import {pokemon} from "../../models/pokemonModel";
 import {ActivatedRoute} from "@angular/router";
+import {BehaviorSubject, Subject} from "rxjs";
 
 @Component({
   selector: 'app-show-data',
@@ -14,6 +15,7 @@ export class ShowDataComponent implements OnInit{
   }
 
   monPokemon! : pokemon;
+
 
   ngOnInit(): void {
 

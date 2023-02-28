@@ -11,6 +11,6 @@ export class PokeDataService {
   constructor(private _http : HttpClient) { }
 
   getPikachu() : Observable<pokemon>{
-      return this._http.get<pokemon>('https://pokeapi.co/api/v2/pokemon/pikachu')
+      return this._http.get<pokemon>('https://pokeapi.co/api/v2/pokemon/mew')
   }
 }

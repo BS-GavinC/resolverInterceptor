@@ -16,6 +16,7 @@ export class PokeDataResolverResolver implements Resolve<pokemon> {
   constructor(private _pokeService : PokeDataService) {
   }
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<pokemon> {
+    // return data
     return this._pokeService.getPikachu()
   }
 }
